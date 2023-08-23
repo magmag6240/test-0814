@@ -1,0 +1,20 @@
+.thanks-content {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thanks-text {
+    margin: 15em 0 3em 0;
+    font-size: 1.5em;
+}
+
+.thanks-button-submit {
+    padding: 0.5em;
+    width: 20%;
+    border-radius: 0.5em;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}

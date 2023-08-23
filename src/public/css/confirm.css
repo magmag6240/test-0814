@@ -1,0 +1,58 @@
+.confirm-content {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+}
+
+.confirm-title {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 1em 0 3em 0;
+}
+
+.confirm-table {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5em;
+}
+
+.confirm-table-header,
+.confirm-table-header-opinion {
+    padding: 1.5em;
+    font-weight: bold;
+    text-align: start;
+    width: 10em;
+}
+
+.confirm-table-input,
+.confirm-table-textarea {
+    margin: 0 1em;
+    width: 30em;
+    outline: none;
+    border: none;
+}
+
+.confirm-table-textarea {
+    position: relative;
+    top: 2em;
+}
+
+.form-button {
+    margin: 3em 0 1em 0;
+}
+
+.form-button-submit {
+    padding: 0.5em;
+    width: 18%;
+    border-radius: 0.5em;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-fix {
+    color: #000;
+}

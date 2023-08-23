@@ -1,0 +1,247 @@
+.manage-form {
+    width: 1500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.manage-form-title {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    margin: 0 6em;
+    padding: 2em 3em 1.5em 3em;
+}
+
+.search-form-title {
+    font-weight: bold;
+    margin: 1em 5em 0 0;
+}
+
+.search-form-title-gender {
+    font-weight: bold;
+    margin: 0.6em 2em 0 2em;
+}
+
+.search-item-name,
+.search-item-gender,
+.search-item-date,
+.search-item-email {
+    display: flex;
+    position: relative;
+}
+
+.search-item-gender {
+    top: -3em;
+    left: 26.5em;
+}
+
+.search-item-date {
+    top: -1em;
+}
+
+.search-item-email {
+    top: 0.1em;
+}
+
+.search-date-span {
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.search-text,
+.search-text-email {
+    height: 3.5em;
+    width: 19em;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    margin: 0 2em;
+}
+
+.search-text-email {
+    position: relative;
+    left: -4.7em;
+}
+
+.gender-radio {
+    appearance: none;
+    position: absolute;
+}
+
+.radio-text::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #c0c0c0;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 1em 0 0;
+}
+
+.radio-text {
+    position: relative;
+    margin: 0 2em 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.gender-radio:checked+.radio-text::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    left: 1em;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #000;
+}
+
+.search-form-button {
+    margin-top: 2em;
+}
+
+.delete-form-button {
+    margin-right: 2.5em;
+}
+
+.search-form-button-submit,
+.delete-form-button-submit {
+    border-radius: 0.5em;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.search-form-button-submit {
+    width: 9em;
+    height: 3em;
+}
+
+.delete-form-button-submit {
+    width: 5em;
+}
+
+.form-fresh {
+    color: #000;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0 1em 0;
+}
+
+.paginate-number,
+.paginate-page {
+    display: flex;
+    position: relative;
+}
+
+.paginate-number {
+    left: 6em;
+}
+
+.paginate-page {
+    right: 6em;
+}
+
+.paginate-text-all {
+    margin-right: 1em;
+}
+
+.current-paginate,
+.another-paginate,
+.current-paginate-page,
+.another-paginate-page {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.1em 0.5em;
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+}
+
+.current-paginate-page {
+    color: #fff;
+    background-color: #000;
+}
+
+.manage-table {
+    margin: 0 6em;
+    text-align: start;
+}
+
+.manage-table__inner {
+    table-layout: fixed;
+}
+
+.manage-table__row {
+    border-bottom: 1px solid #ddd;
+}
+
+.manage-table-header-id,
+.manage-table-header-name,
+.manage-table-header-gender,
+.manage-table-header-email,
+.manage-table-header-opinion {
+    border-bottom: 2px solid #000;
+    text-align: start;
+}
+
+.manage-table-header-id,
+.manage-table-item-id {
+    text-align: center;
+    width: 9%;
+}
+
+.manage-table-header-name,
+.manage-table-item-name {
+    width: 10%;
+}
+
+.manage-table-header-gender,
+.manage-table-item-gender {
+    width: 7%;
+}
+
+.manage-table-header-email,
+.manage-table-item-email {
+    width: 25%;
+}
+
+.manage-table-header-opinion,
+.manage-table-item-opinion {
+    width: 50%;
+}
+
+.manage-table-item-opinion {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.manage-table-item-opinion-all {
+    position: absolute;
+    top: -8em;
+    left: 4em;
+    background-color: #F0FFFF;
+    outline: 2px solid #000;
+    width: 25em;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.manage-table-item-opinion:hover .manage-table-item-opinion-all {
+    visibility: visible;
+    opacity: 1;
+}
